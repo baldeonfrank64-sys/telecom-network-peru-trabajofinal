@@ -1,0 +1,559 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#0b1220;
+    color:white;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#0ea5e9,#1e3a8a);
+    text-align:center;
+    padding:30px;
+}
+
+/* NAV */
+nav{
+    background:#111827;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+    background:url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b');
+    background-size:cover;
+    height:320px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+    padding:20px;
+}
+
+/* SECCIONES */
+.section{
+    padding:60px 40px;
+    text-align:center;
+}
+
+.section.dark{
+    background:#0f172a;
+}
+
+.sub{
+    color:#94a3b8;
+    margin-bottom:30px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    transition:0.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#111827;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* BOTÓN */
+button{
+    margin-top:10px;
+    padding:10px 15px;
+    border:none;
+    background:#0ea5e9;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#38bdf8;
+}
+
+/* FOOTER */
+footer{
+    background:#020617;
+    text-align:center;
+    padding:20px;
+}
+/* HERO */
+
+.hero{
+    background:url('https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif');
+    background-size:cover;
+    background-position:center;
+    height:400px;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    padding:20px;
+}
+
+.hero-content h2{
+    font-size:45px;
+    margin:20px 0;
+    color:#38bdf8;
+
+    text-shadow:0 0 20px #38bdf8;
+}
+
+.hero-content p{
+    font-size:18px;
+    max-width:700px;
+}
+
+.gif{
+    width:150px;
+}
+
+/* =========================
+   LIGHTBOX
+========================= */
+/* BOTON */
+
+.btn{
+
+    display:inline-block;
+
+    padding:12px 25px;
+
+    background:#0ea5e9;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    margin-top:15px;
+}
+
+/* LIGHTBOX */
+
+.lightbox{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.8);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+}
+
+/* ABRIR */
+
+.lightbox:target{
+
+    display:flex;
+}
+
+/* CONTENIDO */
+
+.lightbox-content{
+
+    width:70%;
+
+    max-width:700px;
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    position:relative;
+
+    text-align:center;
+}
+
+/* IMAGEN */
+
+.imagen{
+
+    width:100%;
+
+    height:300px;
+
+    border-radius:10px;
+
+    background-size:cover;
+
+    background-position:center;
+
+    margin-bottom:20px;
+}
+
+/* IMAGENES */
+
+.networking{
+
+    background-image:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1000');
+}
+
+.cloud{
+
+    background-image:url('https://thumbs.dreamstime.com/b/digital-collaboration-network-business-professionals-connected-platforms-engage-across-interconnected-symbolizing-360450651.jpg');
+}
+
+.seguridad{
+
+    background-image:url('https://assets.website-files.com/646e120d6d1b3e437d8b5803/6501bc2b71ecba4b05b3b9d9_X5aZrndcHEi_Rug_WZ1le8pKXCaQvXYT_7Wutcw6adALMBSda8_8nuXDLPM_jrgzAF0h28IA6ZQuJ_buuwe7Jk3py8ElkcvPoUHeoJJt8Eo94uINQgyeB39TUQRjzXlT7WWcLFl16ttUbf_0t1w450Q.jpeg');
+}
+
+/* CERRAR */
+
+.cerrar{
+
+    position:absolute;
+
+    top:10px;
+    right:20px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:40px;
+}
+
+
+/* TEXTO HERO */
+
+.hero-content p{
+
+    font-size:28px;
+
+    line-height:1.5;
+
+    margin-top:25px;
+
+    color:white;
+
+    font-weight:bold;
+
+    max-width:900px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    text-align:center;
+}
+
+/* IMAGENES INFRAESTRUCTURA */
+
+.fibra{
+
+    background-image:url('https://www.diariodepontevedra.es/media/diariodepontevedra/images/2018/03/22/2018032207515665795.jpg');
+}
+
+.datacenter{
+
+    background-image:url('https://tse4.mm.bing.net/th/id/OIP.1ZXBCqb0Ez9IihWPe2l73AHaEK?pid=Api&P=0&h=180');
+}
+
+.redes{
+
+    background-image:url('https://adpmx.com/storage/2025/07/cableado-1024x683-1.jpg');
+}
+
+/* =========================
+   IMAGENES SEGURIDAD
+========================= */
+
+.cctv{
+
+    background-image:url('https://img.freepik.com/fotos-premium/sistemas-avanzados-vigilancia-seguridad-cctv-vigilancia-guardias_1281119-615.jpg');
+}
+
+.acceso{
+
+    background-image:url('https://conseg.com.mx/wp-content/uploads/2018/11/para-pgina-3-300x184.png');
+}
+
+.cyber{
+
+    background-image:url('https://thelogisticsworld.com/wp-content/uploads/2023/01/ilustracion-de-seguridad-cibernetica.jpg');
+}
+/* =========================
+   FORMULARIO VERTICAL
+========================= */
+
+.formulario{
+
+    width:100%;
+
+    max-width:600px;
+
+    margin:auto;
+
+    margin-top:40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:20px;
+}
+
+/* INPUTS */
+
+.formulario input,
+.formulario textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#1e293b;
+
+    color:white;
+
+    font-size:18px;
+
+    outline:none;
+
+    box-sizing:border-box;
+}
+
+/* TEXTAREA */
+
+.formulario textarea{
+
+    height:180px;
+
+    resize:none;
+}
+
+/* BOTON */
+
+.formulario button{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#0ea5e9;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+/* =========================
+   TITULO PRINCIPAL
+========================= */
+
+header{
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://img.freepik.com/fotos-premium/conexiones-corporativas-construccion-relaciones-comerciales-asociaciones-estrategicas-concepto-redes-empresariales-construcion-relaciones-alianzas-estrategicas-conexiones-profesionales_864588-85136.jpg');
+
+    background-size:cover;
+
+    background-position:center;
+
+    padding:80px 20px;
+
+    text-align:center;
+}
+
+/* TITULO */
+
+header h1{
+
+    font-size:70px;
+
+    color:white;
+
+    margin:0;
+
+    text-shadow:
+    0 0 10px #38bdf8,
+    0 0 20px #38bdf8,
+    0 0 40px #38bdf8;
+}
+
+/* SUBTITULO */
+
+header p{
+
+    font-size:24px;
+
+    color:#e2e8f0;
+
+    margin-top:15px;
+}
+.mensaje-nav{
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    color:#cbd5e1;
+
+    text-align:center;
+
+    background:rgba(15,23,42,0.7);
+
+    display:inline-block;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+    border:1px solid #38bdf8;
+}
+/* =========================
+   TODAS LAS IMAGENES
+========================= */
+
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    display:block;
+}
+/* =========================
+   IMAGENES LIGHTBOX
+========================= */
+
+.imagen{
+
+    width:100%;
+
+    height:400px;
+
+    background-size:cover;
+
+    background-position:center;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+}
+/* =========================
+   LIGHTBOX MÁS PEQUEÑO
+========================= */
+
+.lightbox-content{
+
+    width:50%;
+
+    max-width:500px;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    text-align:center;
+}
+
+/* IMAGEN */
+
+.imagen{
+
+    height:220px;
+
+    margin-bottom:15px;
+}
+
+/* TITULO */
+
+.lightbox-content h2{
+
+    font-size:28px;
+
+    margin-bottom:10px;
+}
+
+/* TEXTO */
+
+.lightbox-content p{
+
+    font-size:16px;
+
+    line-height:1.4;
+
+    margin-bottom:10px;
+}
